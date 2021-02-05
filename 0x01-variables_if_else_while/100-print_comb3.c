@@ -16,7 +16,8 @@ while (j <= '9')
 {
 putchar(i);
 putchar(j);
-if(i!= '8'){
+if(i!='8')
+{
 putchar(',');
 putchar(' ');
 }
