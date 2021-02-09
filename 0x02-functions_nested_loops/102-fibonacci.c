@@ -9,13 +9,13 @@
 int main(void)
 {
 int i;
-int num1 = 0, num2 = 2, sum;
+int num1 = 0, num2 = 1, sum;
 for (i = 0; i < 50; i++)
 {
 sum = num1 + num2;
 num1 = num2;
 num2 = sum;
-printf("%ld", sum);
+printf("%d", sum);
 if (i != 49)
 printf(", ");
 }
