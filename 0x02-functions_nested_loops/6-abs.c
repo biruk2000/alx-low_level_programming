@@ -10,11 +10,11 @@
  */
 int _abs(int n)
 {
-if(n >= 0)
+if (n >= 0)
 {
 return (n);
 }
-else 
+else
 {
 n = -n;
 return (n);
