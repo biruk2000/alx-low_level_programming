@@ -15,7 +15,7 @@ for (i = 0; i < 97; i++)
 sum = num1 + num2;
 num1 = num2;
 num2 = sum;
-printf("%.0lf", sum);
+printf("%.0Lf", sum);
 if (i != 96)
 printf(", ");
 }
