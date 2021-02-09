@@ -9,7 +9,7 @@
 int main(void)
 {
 int i;
-long double num1 = 1, num2 = 2, sum;
+long double num1 = 0, num2 = 1, sum;
 for (i = 0; i < 97; i++)
 {
 sum = num1 + num2;
