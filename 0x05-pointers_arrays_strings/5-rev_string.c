@@ -14,7 +14,7 @@ int leng2 = 0;
 char tmp;
 while (s[leng1] != '\0')
 {
-eng1++;
+leng1++;
 }
 leng1 = leng1 - 1;
 while (leng2 <= leng1)
