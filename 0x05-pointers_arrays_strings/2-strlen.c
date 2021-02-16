@@ -4,6 +4,7 @@
  * _strlen -calculate the length of strings
  *
  *@s: stores the input
+ *
  *Return: length
  */
 
