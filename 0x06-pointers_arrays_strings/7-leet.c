@@ -7,22 +7,24 @@
  *
  * Return: str
  */
-
 char *leet(char *str)
 {
-int i = 0, j;
-char a[] = {'a', 'e', 'o', 't', 'l'}, b[] = {'A', 'E', 'O', 'T', 'L'},
-leet[] = {'4', '3', '0', '7', '1'};
-while (str[i] != '\0')
+int len = 0;
+int len2 = 0;
+char lett[] = "aAeEoOtTlL";
+char num[] = "4433007711";
+while (*(str + len) != '\0')
 {
-j = 0;
-while (j < 5)
-{						{
-if (str[i] == a[j] || str[i] == b[j])
-str[i] = leet[j];
-j++;
+while (*(lett + len2) != '\0')
+{
+if (*(str + len) == *(lett + len2))
+{
+*(str + len) = *(num + len2);
 }
-i++;
+len2++;
+}
+len2 = 0;
+len++;
 }
 return (str);
 }
