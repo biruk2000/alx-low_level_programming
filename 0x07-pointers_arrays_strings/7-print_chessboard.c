@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * print_chessboard - prints chessboard
  *
