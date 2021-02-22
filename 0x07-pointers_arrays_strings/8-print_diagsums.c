@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - Prints diagonal sum
@@ -10,11 +11,20 @@
  */
 void print_diagsums(int *a, int size)
 {
-int i, sum1 = 0, sum2 = 0;
-for (i = 0; i < size; i++)
+int len = 0;
+int sum = 0;
+while (len < size)
 {
-sum1 += a[(size + 1) * i]
-sum2 += a[(size - 1) * (i + 1)];
+sum = sum + a[(size + 1) * len];
+len++;
 }
-printf("%d, %d\n", sum1, sum2);
+printf("%d, ", sum);
+sum = 0;
+len = 0;
+while (len < size)
+{
+sum = sum + a[(size - 1) * (len + 1)];
+len++;
+}
+printf("%d\n", sum);
 }
